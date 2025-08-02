@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raise New Ticket | QuickDesk</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+</head>
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    min-height: 100vh;
+    margin: 0;
+}
+
+.dashboard-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.dashboard-container {
+    background: rgba(255,255,255,0.95);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
+    padding: 40px 32px 32px 32px;
+    max-width: 1800px;
+    width: 100%;
+}
+
+.center-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #2575fc;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.register-form input,
+.register-form select,
+.register-form textarea {
+    padding: 12px 14px;
+    border: 1.5px solid #e0e7ff;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f7faff;
+    transition: border 0.2s, box-shadow 0.2s;
+    outline: none;
+    resize: none;
+}
+
+.register-form input:focus,
+.register-form select:focus,
+.register-form textarea:focus {
+    border: 1.5px solid #2575fc;
+    box-shadow: 0 0 0 2px #e0e7ff;
+    background: #fff;
+}
+
+.register-form button {
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 4px 16px 0 rgba(38, 135, 255, 0.12);
+    margin-top: 8px;
+}
+
+.register-form button:hover {
+    background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+@media (max-width: 600px) {
+    .dashboard-container {
+        padding: 24px 8px 16px 8px;
+        max-width: 98vw;
+    }
+    .center-title {
+        font-size: 1.3rem;
+    }
+}
+</style>
+<body class="dashboard-page">
+    <!-- Home Button -->
+<div class="top-right-home">
+  <a href="index.html">🏠 Home</a>
+</div>
+
+<div class="top-right-dashboard" style="position: absolute; top: 20px; left: 20px;">
+  <a href="dashboard.html" style="color: #fff; background: rgba(0,0,0,0.3); padding: 8px 12px; border-radius: 6px; text-decoration: none;">
+    🔙 Dashboard
+  </a>
+</div>
+
+  <div class="dashboard-bg">
+    <div class="dashboard-container">
+      <h1 class="center-title">🎫 Raise a New Ticket</h1>
+      <form class="register-form" id="ticketForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="text" placeholder="Issue Subject" required />
+
+        <select required>
+          <option value=""> Select Issue Type </option>
+          <option value="Login Issue">Login Issue</option>
+          <option value="Payment Issue">Payment Issue</option>
+          <option value="Technical Bug">Technical Bug</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <textarea rows="4" placeholder="Describe your issue..." required></textarea>
+
+        <select required>
+          <option value="">Select Priority </option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+
+        <button type="submit">Submit Ticket</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("ticketForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("🎉 Ticket submitted successfully!");
+    });
+  </script>
+</body>
+</html>
