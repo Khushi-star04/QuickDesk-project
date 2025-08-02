@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Tickets | QuickDesk</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+  <style>
+    .ticket-table-container {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: 30px;
+      color: #fffbfb;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 12px 15px;
+      text-align: left;
+    }
+
+    th {
+      background-color: rgba(0, 0, 0, 0.4);
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .status-open {
+      color: #ff5c5c;
+      font-weight: bold;
+    }
+
+    .status-inprogress {
+      color: #ffc107;
+      font-weight: bold;
+    }
+
+    .status-resolved {
+      color: #4caf50;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body class="dashboard-page">
+
+<div class="top-right-home">
+  <a href="index.html">🏠 Home</a>
+</div>
+<div class="top-right-dashboard" style="position: absolute; top: 20px; left: 20px;">
+  <a href="dashboard.html" style="color: #fff; background: rgba(0,0,0,0.3); padding: 8px 12px; border-radius: 6px; text-decoration: none;">
+    🔙 Dashboard
+  </a>
+</div>
+
+  <div class="dashboard-bg">
+    <div class="dashboard-container">
+      <h1 class="center-title">📋 My Submitted Tickets</h1>
+
+      <div class="ticket-table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Ticket ID</th>
+              <th>Subject</th>
+              <th>Type</th>
+              <th>Priority</th>
+              <th>Status</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>TK-1001</td>
+              <td>Login Issue</td>
+              <td>Login</td>
+              <td>High</td>
+              <td class="status-open">Open</td>
+              <td>01-Aug-2025</td>
+            </tr>
+            <tr>
+              <td>TK-1002</td>
+              <td>Payment Not Reflected</td>
+              <td>Payment</td>
+              <td>Medium</td>
+              <td class="status-inprogress">In Progress</td>
+              <td>31-Jul-2025</td>
+            </tr>
+            <tr>
+              <td>TK-1003</td>
+              <td>App Crashing on Load</td>
+              <td>Technical Bug</td>
+              <td>High</td>
+              <td class="status-resolved">Resolved</td>
+              <td>30-Jul-2025</td>
+            </tr>
+            <tr>
+              <td>TK-1004</td>
+              <td>Profile Update Not Working</td>
+              <td>Other</td>
+              <td>Low</td>
+              <td class="status-open">Open</td>
+              <td>29-Jul-2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
