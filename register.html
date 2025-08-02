@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register | QuickDesk</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- Home Button -->
+<div class="top-right-home">
+  <a href="index.html"> Home</a>
+</div>
+
+  <div class="register-container">
+    <div class="register-header">
+      <h1>Register</h1>
+      <p>Create your QuickDesk account</p>
+    </div>
+
+    <form id="registerForm" class="register-form">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+
+      <div class="password-wrapper">
+        <input type="password" name="password" id="password" placeholder="Password" required />
+        <span class="toggle-password" onclick="togglePassword()">👁</span>
+      </div>
+
+      <button type="submit" class="register-btn">Register</button>
+    </form>
+
+    <div class="register-footer" style="color: #2196f3;">
+      Already have an account? <a href="login.html" style="color:#00e0ff;">Login here</a>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
