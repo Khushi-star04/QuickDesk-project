@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url('bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: rgb(251, 251, 251);
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 1;
+}
+
+.home-container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  background: rgba(0, 0, 0, 0.75); 
+  border-radius: 14px;
+  max-width: 600px;
+  min-height: 400px;
+  width: 90%;
+  z-index: 2;
+  text-align: center;
+}
+
+.home-container h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.home-container .brand {
+  color: #ffd700;
+}
+
+.home-container p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.home-buttons .btn {
+  padding: 12px 25px;
+  background-color: #ffffff;
+  color: #2193b0;
+  border-radius: 6px;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.home-buttons .btn:hover {
+  background-color: #000000;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  color: #2193b0;
+}
+
+
+/*Register css styling*/
+
+.register-container {
+  background: linear-gradient(135deg, #202022,#060606);
+  padding: 40px 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.register-header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.register-header p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.register-form input {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.register-btn {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  background: linear-gradient(135deg, #00FFED, #9D00C6);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.register-btn:hover {
+  filter: brightness(1.1);
+}
+
+.register-footer {
+  margin-top: 40px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+
+/*  Login Page Styles ------------------- */
+
+
+.login-container {
+  /*background: rgba(0, 0, 0, 0.75);*/
+
+  padding: 40px 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.login-header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.login-header p {
+  font-size: 18px;
+  color: #000000;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.login-form input {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.login-btn {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  background: linear-gradient(135deg, #00FFED, #9D00C6);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-btn:hover {
+  filter: brightness(1.1);
+}
+
+.login-footer {
+  margin-top: 40px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Keep this for center text */
+.center-title {
+  text-align: center;
+  font-size: 36px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.center-subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* Main flex layout for buttons + description */
+
+/* Dashboard Page Style */
+body.dashboard-page {
+  background: linear-gradient(to right,  #00899A,#425055);
+  min-height: 100vh;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+/* Heading Centered */
+.center-title {
+  text-align: center;
+  font-size: 36px;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.center-subtitle {
+  text-align: center;
+  font-size: 19px;
+  color: #d7d3d3;
+  margin-bottom: 30px;
+}
+
+/* Buttons on Left */
+.dashboard-left {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+  margin-left: 5%;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+.dashboard-left button {
+  padding: 14px 22px;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #00FFED, #9D00C6);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.dashboard-left button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* How it Works Card */
+.dashboard-description.bottom-card {
+  background: rgba(0, 0, 0, 0.5);
+  color: #eee;
+  border-radius: 12px;
+  padding: 25px;
+  width: 90%;
+  margin: 50px auto 0;
+  font-size: 15.5px;
+  line-height: 1.8;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-description ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.dashboard-description li {
+  margin-bottom: 12px;
+}
+
+
+.top-right-home {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 10;
+}
+
+.top-right-home a {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: rgba(0,0,0,0.5);
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.top-right-home a:hover {
+  background-color: rgba(255,255,255,0.2);
+  color: white;
+}
