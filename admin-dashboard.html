@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard | QuickDesk</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .admin-table-container {
+      margin-top: 40px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 25px;
+      color: #fff;
+      overflow-x: auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    th {
+      background: rgba(0, 0, 0, 0.4);
+      font-weight: bold;
+    }
+
+    .status-open {
+      color: red;
+      font-weight: bold;
+    }
+
+    .status-inprogress {
+      color: orange;
+      font-weight: bold;
+    }
+
+    .status-resolved {
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body class="dashboard-page">
+  <div class="dashboard-container">
+    <h1 class="center-title">🛠 Admin Dashboard - All Tickets</h1>
+
+    <div class="admin-table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Ticket ID</th>
+            <th>User Name</th>
+            <th>Email</th>
+            <th>Subject</th>
+            <th>Type</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TK-1001</td>
+            <td>Khushi Soni</td>
+            <td>khushi@example.com</td>
+            <td>Login Failed</td>
+            <td>Login</td>
+            <td>High</td>
+            <td class="status-open">Open</td>
+            <td>02-Aug-2025</td>
+          </tr>
+          <tr>
+            <td>TK-1002</td>
+            <td>Nayan</td>
+            <td>nayan@example.com</td>
+            <td>Payment Issue</td>
+            <td>Payment</td>
+            <td>Medium</td>
+            <td class="status-inprogress">In Progress</td>
+            <td>01-Aug-2025</td>
+          </tr>
+          <tr>
+            <td>TK-1003</td>
+            <td>Simran</td>
+            <td>simran@example.com</td>
+            <td>Bug in App</td>
+            <td>Technical</td>
+            <td>Low</td>
+            <td class="status-resolved">Resolved</td>
+            <td>31-Jul-2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
